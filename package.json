@@ -1,0 +1,13 @@
+{
+  "name": "how-node-works",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xuziwei <xuziwei89@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "node-test": "nodemon threads.js"
+  },
+  "dependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
