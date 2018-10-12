@@ -11,15 +11,19 @@
 
 我们在 js 文件然后在终端执行的 js 代码。通过两个模块帮助我们执行 js 代码：**V8**和**libuv**
 
-- [V8](https://github.com/v8/v8)
+![enter image description here](images/node-1-1.jpg)
 
-  V8 是 Google 用 C++（68.7%）和 JavaScript（29.4%）开发的开源的 JavaScript 引擎,，用于在浏览器环境之外执行 JavaScript 代码。
+- V8 [项目地址](https://github.com/v8/v8)
 
-- [libuv](https://github.com/libuv/libuv)
+V8 是 Google 用 C++和 JavaScript 开发的开源的 JavaScript 引擎,，用于在浏览器环境之外执行 JavaScript 代码。
 
-  libuv 是一个主要由 C(95%)和 C++(1.9%)编写的开源工程，它可以让 node 直接调用系统底层的服务：包含文件系统，网络服务，还有一些并发操作。
+- libuv [项目地址](https://github.com/libuv/libuv)
+
+  libuv 是一个主要由 C/C++ 编写的开源工程，它可以让 node 直接调用系统底层的服务：包含文件系统，网络服务，还有一些并发操作。
 
 拥有了 node，我们就可以不用写 C++代码和 V8，libuv 进行交互了，我们直接写 js 代码就可以直接和使唤这两个大兄弟干活了～
+
+![enter image description here](images/node-1-2.jpg)
 
 ## 线程基础
 
