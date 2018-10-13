@@ -9,10 +9,6 @@
 
 ## [Node 的内部原理](./articles/node-internal.md)
 
-## 线程基础
+## 事件循环(./articles/node-loop.md)
 
-## Node 事件循环
-
-## Node 是单线程吗？
-
-![enter image description here](images/node-2-2.jpg)
+## Node 是单线程吗？(./articles/node-threads.md)
