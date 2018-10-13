@@ -8,6 +8,7 @@
     "node-test": "nodemon threads.js"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "nodemon": "^1.18.4"
   }
 }
