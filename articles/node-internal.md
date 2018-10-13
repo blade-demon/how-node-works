@@ -159,7 +159,7 @@ libuv provides cross-platform implementations for multiple threading and synchro
 ```
 
 上面的话可以翻译为 libuv 为多线程和同步原语提供了跨平台的实现。API 主要遵循 pthreads API。关于同步原语是指平台(例如操作系统)为支持线程或进程同步而向用户提供的一个安全机制(例如原子操作、信号量、互斥、事件、条件变量和信号量）。
-其实在这里我们不需要深挖，libuv 其实在这里就是让 Node 获得了多线程和进行管理的能力。
+其实在这里我们不需要深挖，libuv 其实在这里就是让 Node 获得了多线程和进程管理的能力。
 
 在下面有一个关于 uv_once_t 的定义
 
@@ -170,4 +170,5 @@ libuv provides cross-platform implementations for multiple threading and synchro
 ```
 
 最后我们再来一张图来看看 Node 每一个模块的职责：
+
 ![enter image description here](../images/node-2-3.jpg)
