@@ -7,7 +7,7 @@
   yarn run node-test
 ```
 
-## Node 的内部原理
+## [Node 的内部原理](./articles/node-internal.md)
 
 ## 线程基础
 
@@ -16,15 +16,3 @@
 ## Node 是单线程吗？
 
 ![enter image description here](images/node-2-2.jpg)
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```
