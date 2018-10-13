@@ -2,7 +2,7 @@
 
 我们在 js 文件然后在终端执行的 js 代码。通过两个模块帮助我们执行 js 代码：**V8**和**libuv**
 
-![enter image description here](images/node-1-1.jpg)
+![enter image description here](../images/node-1-1.jpg)
 
 - V8 [项目地址](https://github.com/v8/v8)
 
@@ -14,7 +14,7 @@
 
 拥有了 node，我们就可以不用写 C++代码和 V8，libuv 进行交互了。我们可以直接编写 js 代码，通过 Node 提供的 API 调用 V8 和 libuv 的代码就可以直接和使唤这两个大兄弟干活了～
 
-![enter image description here](images/node-1-2.jpg)
+![enter image description here](../images/node-1-2.jpg)
 
 下面我们找一个标准库的 PBKDF2 函数来研究下它的实现过程：
 
@@ -94,7 +94,7 @@ function pbkdf2(password, salt, iterations, keylen, digest, callback) {
 ```
 
 这里我们可以看到我们在写 js 代码中调用的标准库函数 pbkdf2 的定义的地方，嗯对，不是真正计算的地方。
-![enter image description here](images/node-2-1.jpg)
+![enter image description here](../images/node-2-1.jpg)
 
 ### 在 V8 和 libuv 中查看这个函数是如何真正实现的
 
@@ -171,4 +171,4 @@ libuv provides cross-platform implementations for multiple threading and synchro
 ```
 
 最后我们再来一张图来  看看 Node 在执行我们的代码的时候每一个模块都帮我们做了哪些事情：
-![enter image description here](images/node-2-3.jpg)
+![enter image description here](../images/node-2-3.jpg)
